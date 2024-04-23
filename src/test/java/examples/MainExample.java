@@ -22,7 +22,10 @@ public class MainExample {
 //                .setNProbs(10)
                 .setMirostat(InferenceParameters.MiroStat.V2)
                 .setAntiPrompt("User:");
-        String modelName = System.getProperty("model.name");
+        //String modelName = System.getProperty("model.name");
+        String modelName = "mistral-7b-instruct-v0.2.Q2_K.gguf";
+        //String modelName = "stable-code-3b.Q2_K.gguf";
+        //String modelName  ="llama-2-7b.Q2_K.gguf";
         String modelPath = ModelResolver.getPathToModel(modelName);
         String system = "This is a conversation between User and Llama, a friendly chatbot.\n" +
                 "Llama is helpful, kind, honest, good at writing, and never fails to answer any " +
